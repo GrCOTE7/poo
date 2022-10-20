@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MVC</title>
-	<script id="__bs_script__" src='./config/browser-sync/sync_gc7.js'></script>
-</head>
+/**
+ * MVC (POO) - (ɔ) Online FORMAPRO - GrCOTE7 - 2022.
+ */
 
-<body style="font-family: arial;">
-	<div id="test"></div>
-	<?php include 'mvc.php'; ?>
-	<script src='/assets/js/test.js'></script>
-</body>
+namespace App;
 
-</html>
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
+
+require_once './vendor/autoload.php';
+// $a = new Mvc();
+
+$loader = new FilesystemLoader('./views/pages');
+$twig   = new Environment($loader, [
+	'cache' => false,
+]);
+echo $twig->render('home.twig', ['the' => 'variables', 'go' => 'here']);
