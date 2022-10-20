@@ -5,13 +5,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MVC</title>
+	<title>{{ title }} | MVC</title>
 	<script id="__bs_script__" src='./config/browser-sync/sync_gc7.js'></script>
 </head>
 
 <body style="font-family: arial;">
 	<div id="test"></div>
-
+	<div id="content">
+		{% block content %}
+		{% endblock %}
+	</div>
 	<script src='/assets/js/test.js'></script>
 </body>
 

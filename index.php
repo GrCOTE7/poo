@@ -6,14 +6,13 @@
 
 namespace App;
 
+require_once './vendor/autoload.php';
+
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
-require_once './vendor/autoload.php';
-// $a = new Mvc();
-
-$loader = new FilesystemLoader('./views/pages');
+$loader = new FilesystemLoader('./views');
 $twig   = new Environment($loader, [
 	'cache' => false,
 ]);
-echo $twig->render('home.twig', ['the' => 'variables', 'go' => 'here']);
+echo $twig->render('pages/home.twig', ['title' => 'Accueil']);
