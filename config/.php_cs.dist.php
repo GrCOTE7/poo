@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fruit (POO) - (ɔ) Online FORMAPRO - GrCOTE7 - 2022.
+ * MVC (POO) - (ɔ) Online FORMAPRO - GrCOTE7 - 2022.
  */
 
 return (new PhpCsFixer\Config())
@@ -9,7 +9,7 @@ return (new PhpCsFixer\Config())
 	->setRiskyAllowed(false)
 	->setRules([
 		'header_comment' => [
-			'header'       => 'Fruit (POO) - (ɔ) Online FORMAPRO - GrCOTE7 - 2022.',
+			'header'       => 'MVC (POO) - (ɔ) Online FORMAPRO - GrCOTE7 - 2022.',
 			'comment_type' => 'PHPDoc',
 			'location'     => 'after_declare_strict',
 		],

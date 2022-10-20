@@ -2,15 +2,17 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruit</title>
-  <script id="__bs_script__" src='./config/browser-sync/sync_gc7.js'></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MVC</title>
+	<script id="__bs_script__" src='./config/browser-sync/sync_gc7.js'></script>
 </head>
 
 <body style="font-family: arial;">
-  <?php include 'fruit.php'; ?>
+	<div id="test"></div>
+	<?php include 'mvc.php'; ?>
+	<script src='/assets/js/test.js'></script>
 </body>
 
 </html>
