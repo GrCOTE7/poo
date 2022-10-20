@@ -9,7 +9,7 @@ use App\Fruit;
 use App\Gc7;
 use App\Vegetable;
 
-$f = new Fruit('pomme', 'yellow', 150, 1);
+$f = new Fruit('pomme', 'yellow', 150, true);
 
 Gc7::aff($f);
 

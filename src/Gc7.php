@@ -8,7 +8,11 @@ namespace App;
 
 class Gc7
 {
-	public static function aff($var, $txt = null)
+	/**
+	 * @var Expression or variable (int or array) or object
+	 * @txt Expression 's description
+	 */
+	public static function aff(mixed $var, string $txt = ''): void
 	{
 		echo '<a title=' . debug_backtrace()[0]['file'] . '&nbsp;-&nbsp;Line&nbsp;' . debug_backtrace()[0]['line'] . '><pre>' . (($txt) ? $txt . ' : ' : '');
 		var_dump($var);
